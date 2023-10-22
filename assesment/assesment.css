@@ -1,0 +1,54 @@
+.menu{
+    width: 100%;
+    height: 70px;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo img{
+    margin-left: 20px;
+    height: 60px;
+    margin-top: 5px;
+    width: 60px;
+}
+.navbar{
+    margin-top: 15px;
+    width: 42%;
+    display: flex;
+    margin-left: 700px;
+
+}
+.list7{
+    width: 100px;
+}
+
+.navbar div{
+    margin: 10px;
+}
+.nastedlist{
+    display: none;
+     
+  
+}
+.list3:hover .nastedlist{
+    display: block;
+}
+.nastedlist4{
+    position: relative;
+}
+.innermain{
+    position: absolute;
+    top:-15px;
+    left: 55px;
+    display: none;
+    background-color: red;
+}
+.nastedlist4:hover .innermain{
+    display: block;
+}
+.all{
+    background-color: blue;
+}
+.btn{
+   font-size: 20px;
+}
