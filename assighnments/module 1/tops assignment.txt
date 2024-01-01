@@ -1,0 +1,14 @@
+Web server :- web server define as the where all data of website to be store and web server serve data which is requsted by client.
+ it can be a local server also, as a example amazon web swrvice  , world widw web .
+
+web pages :- web pages is a document is displayed by browser which is sent by server
+
+
+web site :- web site is a collection of web pages when a diffrent web pages combines its make website like amazone , flipkart and many others.
+
+
+search engine:-search engine is palce where you can search information which you needed. popular search engine is google  , yahoo ,bing and others.
+
+
+web browser:- data received from server which is requsted by user a broweser convert data in a format which is understandable by user there are many
+ browsers like chrome , mozila firefox , brave  , microsoft edge and many more.
