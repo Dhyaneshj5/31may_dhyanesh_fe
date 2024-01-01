@@ -1,0 +1,28 @@
+.main{
+    height: auto;
+    width: 70%;
+    display: flex;
+    background-color: red;
+    flex-wrap: wrap;
+    
+
+
+    
+}
+.items{
+    height: 250px;
+    width: 250px;
+    border: 1px solid black;
+    margin: 10px;
+}
+.i-1{
+    height: 300px;
+
+}
+.i-2{
+    height: 200px;
+    
+}
+.i-6{
+    padding-top: 50px;
+}

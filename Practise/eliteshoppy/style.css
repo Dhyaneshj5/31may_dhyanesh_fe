@@ -1,0 +1,621 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* first sub header start */
+header .menu {
+    background-color: #000000;
+    color: white;
+    /* text-align: center; */
+}
+
+.menu {}
+
+.menu .menu-ul li {
+    text-align: center;
+    width: 24.5%;
+    border-right: 1px solid pink;
+    padding: 5px;
+    list-style: none;
+    display: inline-block;
+}
+
+.menu-ul li::after {
+    content: " ";
+    /* border-right: 1px solid yellow; */
+}
+
+.fa-solid,
+.fa-regular {
+    margin: 10px;
+    color: #2fdab8;
+}
+
+/* first sub header ends */
+.search-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* margin-top: 10px; */
+    justify-content: center;
+    margin: 5px;
+    padding: 1px;
+    height: 120px;
+}
+
+.search .searchbar {
+    width: 500px;
+    height: 50px;
+    margin-left: 50px;
+
+}
+.search{
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    background-color: #2fdab8;
+}
+
+.common{
+    margin-right: 100px;
+}
+.search-menu-text{
+    font-size: 35px;
+}
+.hendles{
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    /* background-color: blue; */
+    font-size: 40px;
+    
+}
+/* second sub header ends */
+.main-menu{
+    background-color: #000000;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    margin: 0px 125px;
+}
+.list{
+    justify-content: center;
+    list-style: none;
+    
+}
+.list li{
+    display: inline-block;
+    padding: 25px 45px;
+    font-size: 25px;
+     
+}
+.icon-1{
+    margin-top:0px ;
+    margin-bottom:0px ;
+    width: 50px;
+ 
+    
+    /* background-color: #2fdab8; */
+    color: white;
+    border: 1px solid white;
+    background-color: lightblue;
+
+}
+.list li:hover{
+    border-bottom: 8px solid #2fdab8;
+    transition: 0.5s;
+    color: gray;
+}
+
+/* header ends here */
+
+.firstbg img{
+    height: 70vh;
+    width: 100%;
+}
+.section-1{
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+
+}
+
+.firstsection{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.commondiv{
+    margin: 40px;
+    height: 400px;
+    width: 700px;
+    /* border: 30px solid rgba(0, 0, 0, 0.25); */
+    position: relative;
+    background-origin: border-box;
+    /* border: 30px solid rgba(0, 0, 0, 0.2); */
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.commondiv img{
+    position: absolute;
+    width: 140%;
+    left: -100px;
+    right: -100px;
+    height: 100%;
+    overflow: hidden;
+    filter: brightness(50%);
+    transition: 0.5s;
+
+    
+}
+.commondiv:hover img{
+    left: 0px;
+    
+
+}
+.commoninnerdiv{
+    text-align: right;
+    position: absolute;
+    width: 80%;
+    margin: auto;
+    top: 45px;
+    left: 70px;
+    height: 320px;
+    border: 5px solid white;
+    display: none;
+    
+
+}
+.commondiv:hover .commoninnerdiv{
+    display: block;
+    left: 65px;
+    
+}
+
+.heading{
+    position: absolute;
+    top: 130px;
+    letter-spacing: 5px;
+    right: 100px;
+    font-size: 22px;
+    color: white;
+    font-weight: lighter;
+}
+
+.picpera{
+    position: absolute;
+    top:130px;
+    right: 20px;
+    font-size: 34px;
+    color: white;
+    letter-spacing: 10px;
+}
+
+.secondsec{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.picsection{
+    width: 50%;
+}
+.bgsection{
+    background: #2fdab8;
+    width: 50%;
+}
+.content{
+    width: 87%;
+    
+    background: #ffffff;
+    height: 450px;
+    margin-top: 125px;
+}
+
+.h2second{
+    font-size: 40px;
+   padding-top: 50px;
+   padding-left: 30px;
+}
+.events{
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.num{
+    padding: 4px;
+    font-size: 45px;
+    font-weight: 900;
+}
+/* section3 ends here */
+
+
+/* section 4 starts */
+
+.fourthsec{
+    height:auto ;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+}
+.img-content{
+    width: 49%;
+    height: 500px;
+    /* border: 10px solid black; */
+  
+
+}
+.imgdiv-1 , .imgdiiv-2{
+    width: 100%;
+    height: 100%;
+}
+.imgdiv-1 , .imgdiv-2 img{
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+  .divcontent  , .divcontent2  , .divcontent3 ,.divcontent4 {
+    height: 500px ;
+    width: 49%;
+    position: absolute;
+    background-color: red;
+    opacity: 0.5;
+    transition: 10s;
+    
+
+}
+.divcontent {
+    top: -500px;
+    left: 992px;
+    
+}
+.divcontent2{
+    bottom: -500px;
+    right: 100%;
+}
+.divcontent3 {
+    top: -500px;
+    left: 100%;
+   
+}
+.divcontent4{
+    bottom: -500px;
+    right: 51%;
+    
+}
+
+.imgdiv-1:hover .btn1 {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+
+/* section 4 ends */
+
+.secpera{
+    padding-left: 30px;
+    font-size: 25px;
+    padding-top: 25px;
+    color: black;
+}
+.maincontentdiv{
+    display: flex;
+    flex-wrap: wrap;
+   /* border: 10px solid black; */
+   align-items: center;
+   justify-items: center;
+   margin-top: 40px;
+}
+.contentdiv{
+    height: 150px;
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    margin: 30px;
+}
+.commonhoverdiv{
+    position: relative;
+    margin: 25px;
+    box-shadow: 0 0 20px gray;
+}
+.hoverimg{
+    display: flex;
+}
+
+    
+
+
+.abs{
+    position: absolute;
+    left: 000px;
+}
+.rotatecontent{
+    display: flex;
+    transition: 1s;
+    transform-style: preserve-3d;
+    
+}
+
+.imgfront{
+    opacity: 1;
+    visibility: visible;
+    padding: 20px;
+    /* transform: rotateY(180deg); */
+}
+.imgback{
+    opacity: 0;
+    padding: 25px;
+    /* backface-visibility: hidden; */
+    /* transform: rotateY(180deg); */
+    visibility: visible;
+}
+.hoverimg:hover .rotatecontent {
+    transform: rotateY(180deg);
+    
+    
+}
+
+
+
+.mainhover{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.textdiv {
+    text-align: center;
+}
+.hiddendiv{
+    position: absolute;
+    background-color: black;
+    color: white;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    width: 100%;
+    top: 0px;
+    display: none;
+    transition: all ease-in 2s;
+    animation-name: hidden;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction:normal;
+    animation-fill-mode: forwards;
+}
+
+.newdiv{
+    color: white;
+    position: absolute;
+    background: #fc636b;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    top: 0px;
+    right: 0px;
+}
+
+.commonhoverdiv:hover .hiddendiv{
+    display: block;
+
+    
+
+     
+}
+
+   @keyframes hidden {
+     from{
+        top: 0;
+        opacity: 0.3;
+    }
+    to{
+    top: 280px;
+    } 
+    }
+     .btndiv{
+        position: relative;
+        width: 100%;
+    
+        height: 110px;
+        justify-content: center;
+        align-items: center;
+    }
+    .kbtn{
+        position: absolute;
+      background-color: #2fdab8;
+        top: 30px;
+        left: 30px;
+        padding: 15px 70px;
+        border-collapse: collapse;
+    
+    }
+    .btnhover{
+        /* display: inline; */
+    }
+    .btnhover:hover .kbtn{
+        outline: 8px solid #2fdab8;
+        outline-offset: 5px;
+        transition: 0.5s;
+        
+     }
+     /* second section starts */
+     .thirdsec{
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .thheading{
+        text-align: center;
+        margin-top:  40px; 
+        font-size: 45px;
+
+    }
+    .bold{
+        font-weight: 900;
+        font-style: normal;
+    }
+    .trending{
+        font-weight: 100;
+    }
+ 
+    
+    .maincontainer{
+         width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        /* border: 10px solid black; */
+        /* background-color: black; */
+        margin: auto;
+     }
+     .wts{
+        width: 49%;
+    }
+     .wtf{
+        height: 800px;
+        width: 35%;
+        background-color: red;
+        position: relative;
+        overflow: hidden;
+     }
+     .wtf img{
+        height: 100%;
+        width: 140%;
+        position: absolute;
+        left: -150px;
+        right: -50px;
+        transition: 0.2s;
+        filter: brightness(0.5);
+     }
+
+     .main:hover .ggg{
+        left: -110px;
+     }
+     .wtsc{
+        /* display: flex; */
+        flex-wrap: wrap;
+        height: 350px;
+        width: 90%;
+        background-color: ;
+        margin: 100px;
+        position: relative;
+        overflow: hidden;
+        
+     }
+     .wtsc img{
+        height: 100%;
+        width: 130%;
+        position: absolute;
+        left: -150px;
+        right: -50px;
+        filter: brightness(0.5);
+        transition: 0.2s;
+     }
+     .wtsc:hover .jjj{
+        left: -100px;
+    
+     }
+     .winnerdiv{
+        font-size: 40px;
+        color: white;
+        position: absolute;
+        right: 1175px;
+        top: 240px;
+        z-index: 1;
+        /* border: 40px solid black; */
+     }
+     .wtscinnerdiv{
+        position: absolute;
+        z-index: 2;
+        color: white;
+        right: 125px;
+        font-size: 40px;
+        top: 120px;
+     }
+     .wtschiddeninnerdiv{
+            height: 280px;
+    width: 80%;
+    margin: auto;
+    /* background-color: red; */
+    position: absolute;
+    color: white;
+    border: 10px solid white;
+    top: 36px;
+    right: 75px;
+    display: none;
+    transition: 0.2s;
+}
+.picpera2{
+    position: absolute;
+    top: 135px;
+    right: 35px;
+    font-size:25px;
+    letter-spacing: 5px;
+}
+.winnerhiddendiv{
+    border: 10px solid white;
+    height: 731px;
+    width: 430px;
+    position: absolute;
+    top: 135px;
+    left: 248px;
+    z-index: 5;
+    display: none;
+    transition: 0.2s;
+}
+.picpera3{
+    position: absolute;
+    color: white;
+
+    top: 164px;
+    right: 17px;;
+    font-size:25px;
+    letter-spacing: 5px;}
+
+    .wtsc:hover .wtschiddeninnerdiv{
+        display: block;
+    }
+    .ggg:hover .winnerhiddendiv{
+        display: block;
+    }
+
+     
+        
+
+    
+
+
+
+     
+     

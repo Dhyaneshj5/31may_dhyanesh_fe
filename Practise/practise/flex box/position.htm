@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Relative</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .banner{
+            width: 100%;
+            height: 500px;
+            /* border: 1px solid black; */
+        }
+        .banner .banner-img img{
+            position: absolute;
+            left: -40%;
+            width: 140%;
+            height: 500px; 
+            filter: brightness(70%);
+            transition: 1s;
+        }
+        .banner:hover .banner-img  img{
+            left: 0;
+        }
+        .banner .banner-text
+        {
+            position: absolute;
+            text-align: center;
+            top: 70px;
+            left: 200px;
+            transition: 1s;
+
+        }
+        .banner:hover .banner-text{
+
+            border: 10px solid #fff;
+        }
+        .banner .banner-text h1
+        {
+            font-size: 100px;
+            color: #fff;
+            line-height: 200px;
+        }
+        .banner .banner-text h1 span{
+            font-weight: 200;
+            color: #f3f365;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-img">
+            <img src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/banner2.jpg" alt="">
+        </div>
+        <div class="banner-text">
+            <h1>More then 550+ outlets<br> <span>Live across india</span></h1>
+        </div>
+    </div>
+</body>
+</html> 

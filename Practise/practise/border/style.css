@@ -1,0 +1,28 @@
+#firstpera
+{background-color: red;
+    height: 100px;
+    width: 400px;
+border-width: 5px;
+/* border-color: black; */
+/* border-radius: 3px; */
+border-style: solid;
+border: solid 5px green;
+
+
+}
+#secondpera
+{
+
+background-color: green;
+width: 500px;
+height: 150px;
+border: solid 6px yellow;
+border-radius: 5%;
+border-bottom-color: red;
+}
+#thirdpera{
+
+height: 100px;
+width: 500px;
+background-image:url(https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80);
+}

@@ -1,0 +1,14 @@
+div{
+    height: 400px;
+    width: 800px;
+    text-align: center;
+    margin: auto;
+    margin-top: 150px;
+    /* background-color: lightgrey; */
+    border: 20px solid rgba(38, 2, 103, 0.2);
+    /* background-image: url(https://wallpaperaccess.com/full/472038.jpg); */
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    font-size: 50px;
+    text-shadow: -10px -10px 3px;
+}
