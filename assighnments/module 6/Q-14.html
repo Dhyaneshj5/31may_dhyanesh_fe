@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-14</title>
+</head>
+<body>
+    <h1>Write a JavaScript exercise to get the extension of a filename.?</h1>
+
+    <script>
+        function getFileExtension(filename) {
+
+  var dotPosition = filename.lastIndexOf(".");
+
+
+  if (dotPosition === -1 || dotPosition === filename.length - 1) {
+    return "";
+  }
+
+
+  var extension = filename.substring(dotPosition + 1);
+
+  return extension;
+}
+
+
+var filename1 = "example.txt";
+var filename2 = "document.pdf";
+
+console.log("Extension of '" + filename1 + "': " + getFileExtension(filename1));
+console.log("Extension of '" + filename2 + "': " + getFileExtension(filename2));
+    </script>
+</body>
+</html>

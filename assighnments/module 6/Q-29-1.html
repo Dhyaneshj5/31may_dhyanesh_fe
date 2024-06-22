@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-29-1</title>
+</head>
+<body>
+    <h1>Monday to Sunday using switch case in JS</h1>
+    <h2>find answer in script and consol</h2>
+    <script>
+        function printDayOfWeek(dayNumber) {
+    switch (dayNumber) {
+        case 1:
+            console.log("Monday");
+            break;
+        case 2:
+            console.log("Tuesday");
+            break;
+        case 3:
+            console.log("Wednesday");
+            break;
+        case 4:
+            console.log("Thursday");
+            break;
+        case 5:
+            console.log("Friday");
+            break;
+        case 6:
+            console.log("Saturday");
+            break;
+        case 7:
+            console.log("Sunday");
+            break;
+        default:
+            console.log("Invalid day number. Please enter a number between 1 and 7.");
+    }
+}
+
+// Examples:
+printDayOfWeek(1);  // Output: "Monday"
+printDayOfWeek(3);  // Output: "Wednesday"
+printDayOfWeek(7);  // Output: "Sunday"
+printDayOfWeek(9);  // Output: "Invalid day number. Please enter a number between 1 and 7."
+
+    </script>
+</body>
+</html>

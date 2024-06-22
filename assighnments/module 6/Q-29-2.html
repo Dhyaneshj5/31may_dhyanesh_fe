@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-29-2</title>
+</head>
+<body>
+    <h1>Vowel or Consonant using switch case in JS?</h1>
+    <h2>find answer in script and consol</h2>
+<script>
+    function checkVowelOrConsonant(char) {
+    // Convert the character to lowercase to handle both uppercase and lowercase vowels
+    var lowerChar = char.toLowerCase();
+
+    switch (lowerChar) {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+            console.log(char + " is a vowel.");
+            break;
+        default:
+            console.log(char + " is a consonant.");
+    }
+}
+
+// Examples:
+checkVowelOrConsonant('a');   // Output: "a is a vowel."
+checkVowelOrConsonant('B');   // Output: "B is a consonant." 
+checkVowelOrConsonant('e');   // Output: "e is a vowel."
+checkVowelOrConsonant('z');   // Output: "z is a consonant."
+
+</script>
+</body>
+</html>

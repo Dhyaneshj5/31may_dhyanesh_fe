@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-12</title>
+</head>
+<body>
+    <h1>WAP to convert years into days and days into years? </h1>
+    <script>
+        // Function to convert years to days
+function yearsToDays(years) {
+    let days = years * 365; // Assuming a year has 365 days
+    return days;
+}
+
+// Function to convert days to years
+function daysToYears(days) {
+    let years = days / 365; // Assuming a year has 365 days
+    return years;
+}
+
+// Example usage:
+let years = 3;
+let days = 1095; // 3 years * 365 days/year
+
+console.log(years + " years is equal to " + yearsToDays(years) + " days.");
+console.log(days + " days is equal to " + daysToYears(days) + " years.");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Use pattern in console.log in JS?</h1>
+    <h2> find answer in script and consol</h2>
+
+
+    <script>
+
+        prd =''
+        
+        for (let i = 1; i <= 5; i++) {
+                for (let j = 1; j <= i; j++) {
+                  if (j == 1) {
+                    prd = prd + 1 + " ";
+                  }
+                  if (j == 2) {
+                    prd = prd + 0 + " ";
+                  }
+                  if (j == 3) {
+                    prd = prd + 1 + " ";
+                  }
+                  if (j == 4) {
+                    prd = prd + 0 + " ";
+                  }
+                  if (j == 5) {
+                    prd = prd + 1+ " ";
+                  }
+                }
+                prd = prd + "\n";
+              }
+              console.log(prd);
+        
+        
+        
+            </script>
+            <script>
+                let n = 5;
+                let string = '';
+                let count = 0 ;
+                
+                for ( let i = 1; i <= n; i++) {
+                    for (j = 0; j < i; j++) {
+                          string += String.fromCharCode(count+65)+" ";
+                          count++;
+                        }
+                        string+="\n";
+                      }
+                      console.log(string );
+                
+                    </script>
+                    <script>
+                        let rows = 5;
+                        let char = "";
+                  
+                        let count1 = 1;
+                        for (let i = 1; i <= rows; i++) {
+                          for (let j = 1; j <= i; j++) {
+                            char += count1 + " ";
+                            count1++;
+                          }
+                          char += "\n";
+                        }
+                        console.log(char);
+                      </script>
+                      
+                      <script>
+      for (let i = 1; i <= 5; i++) {
+        let str = "* ";
+        console.log(str.repeat(i));
+      }
+    </script>
+
+
+
+    
+</body>
+</html>

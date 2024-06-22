@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Field with Show/Hide Functionality</title>
+  <style>
+    body {
+    
+      margin: 20px;
+    }
+    .password-container {
+      margin-bottom: 10px;
+      background-color: gray;
+      height: 50px;
+      width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div class="password-container">
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter your password">
+    <br>
+    <input type="checkbox" id="showPassword"> <!-- Checkbox for toggling password visibility -->
+    <label for="showPassword">Show password</label>
+  </div>
+
+  <script>
+    // JavaScript to handle show/hide functionality
+    const passwordInput = document.getElementById('password');
+    const showPasswordCheckbox = document.getElementById('showPassword');
+
+    showPasswordCheckbox.addEventListener('change', function() {
+      if (showPasswordCheckbox.checked) {
+        passwordInput.type = 'text';
+      } else {
+        passwordInput.type = 'password';
+      }
+    });
+  </script>
+</body>
+</html>

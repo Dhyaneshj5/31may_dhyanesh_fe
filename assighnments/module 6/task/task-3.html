@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet Generator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+        }
+
+        .marksheet {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .input-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .input-container label {
+            flex: 1;
+            text-align: left;
+        }
+
+        .input-container input[type="number"] {
+            flex: 1;
+            padding: 5px;
+            border: 1px solid gray;
+            border-radius: 4px;
+        }
+
+        .result-btn {
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: lightgray;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: gray;
+        }
+
+        .result {
+            font-size: 18px;
+        }
+
+        .result span {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="marksheet">
+        <h2>Marksheet for Information Technology</h2>
+        <p>Enter Marks</p>
+        <div class="input-container">
+            <label for="c-lang">1. C Language</label>
+            <input type="number" id="c-lang">
+        </div>
+        <div class="input-container">
+            <label for="cpp-lang">2. C++ Language</label>
+            <input type="number" id="cpp-lang">
+        </div>
+        <div class="input-container">
+            <label for="database">3. Database</label>
+            <input type="number" id="database">
+        </div>
+        <div class="input-container">
+            <label for="html">4. HTML</label>
+            <input type="number" id="html">
+        </div>
+        <div class="input-container">
+            <label for="css">5. CSS</label>
+            <input type="number" id="css">
+        </div>
+        <div class="input-container">
+            <label for="php">6. PHP</label>
+            <input type="number" id="php">
+        </div>
+        <div class="input-container">
+            <label for="java">7. Core Java</label>
+            <input type="number" id="java">
+        </div>
+        <div class="result-btn">
+            <button onclick="calculateResult()">Result</button>
+        </div>
+        <div class="result">
+            Total is : <span id="total"></span><br>
+            Percentage is : <span id="percentage"></span>
+        </div>
+    </div>
+    <script>
+        function calculateResult() {
+            const marks = [
+                parseFloat(document.getElementById('c-lang').value) || 0,
+                parseFloat(document.getElementById('cpp-lang').value) || 0,
+                parseFloat(document.getElementById('database').value) || 0,
+                parseFloat(document.getElementById('html').value) || 0,
+                parseFloat(document.getElementById('css').value) || 0,
+                parseFloat(document.getElementById('php').value) || 0,
+                parseFloat(document.getElementById('java').value) || 0,
+            ];
+
+            const totalMarks = marks.reduce((a, b) => a + b, 0);
+            const maxMarks = 350; // Assuming each subject has a maximum of 50 marks
+            const percentage = (totalMarks / maxMarks) * 100;
+
+            document.getElementById('total').textContent = `${totalMarks} / ${maxMarks}`;
+            document.getElementById('percentage').textContent = `${percentage.toFixed(2)} %`;
+        }
+    </script>
+</body>
+</html>

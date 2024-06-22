@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-23</title>
+</head>
+<body>
+    <h1>Find the Character Is Vowel or Not</h1>
+    <p>
+
+ChatGPT
+To determine if a character is a vowel in JavaScript, you can create a function that checks if the character is included in a predefined set of vowels. Here’s a straightforward approach using an array of vowels and the includes method
+    </p>
+
+    <h2>check consol for example and script</h2>
+    <script>
+        function isVowel(char) {
+   
+    var lowerChar = char.toLowerCase();
+    
+    // Define an array of vowels
+    var vowels = ['a', 'e', 'i', 'o', 'u'];
+
+    // Check if the character is in the array of vowels
+    return vowels.includes(lowerChar);
+}
+
+// Example usage:
+console.log(isVowel('a'));  // Output: true
+
+console.log(isVowel('e'));  // Output: true
+console.log(isVowel('z'));  // Output: false
+    </script>
+</body>
+</html>

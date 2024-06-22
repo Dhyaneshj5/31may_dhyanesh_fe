@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-33</title>
+</head>
+<h1>
+    Write to print Fibonacci series up to given numbers? 
+</h1>
+<h2>
+    find answer in script and consol
+</h2>
+<body>
+    <h1>Write to print Fibonacci series up to given numbers? </h1>
+    <script>
+        function fibonacciSeries(count) {
+    let a = 0, b = 1;
+    console.log(a); // Print the first number (0)
+    console.log(b); // Print the second number (1)
+    
+    for (let i = 2; i < count; i++) {
+        let c = a + b;
+        console.log(c); // Print the current Fibonacci number
+        a = b;
+        b = c;
+    }
+}
+
+// Print Fibonacci series up to 10 numbers
+fibonacciSeries(4);
+
+    </script>
+</body>
+</html>

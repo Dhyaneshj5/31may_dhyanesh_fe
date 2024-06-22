@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-4</title>
+</head>
+<body>
+    <h1>Write a mul Function Which will Work Properly When invoked With Following Syntax.</h1>
+    <p>he MUL function is a small version  of the multiplication function. In this function, we call the function that required an argumet , and that function calls another function that required another argument and this step goes on. </p>
+
+    <h2>example</h2>
+    <p>The first function’s argument is A, the second function's argument is B  and the third is C, so the return value will be ABC.</p>
+
+    <h2>code</h2>
+ <code>
+    function mul(A) {  <br>
+        return function(B) {  <br>
+            return function(C) {  <br>
+            return A*B*C; <br>
+            }; 
+        } 
+        } <br>
+        <h2> outcome</h2>
+        console.log(mul(2)(4)(5)); <br>
+        console.log(mul(12)(7)(11));<br>
+ </code>
+    <script> 
+        function mul(A) { 
+        return function(B) { 
+            return function(C) { 
+            return A*B*C; 
+            }; 
+        } 
+        } 
+        
+        console.log(mul(2)(4)(5)); 
+        console.log(mul(12)(7)(11)); 
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-26</title>
+</head>
+<body>
+    <h1>Write find maximum number among 3 numbers using ternary operator in JS?</h1>
+    <h2>find answe in script and consol</h2>
+    <script>
+        function findMax(num1, num2, num3) {
+    var max = (num1 >= num2 && num1 >= num3) ? num1 :
+              (num2 >= num1 && num2 >= num3) ? num2 :
+              num3;
+    return max;
+}
+
+// Examples:
+console.log(findMax(10, 5, 8));   // Output: 10
+console.log(findMax(-2, -5, -1)); // Output: -1
+console.log(findMax(3, 3, 3));    // Output: 3 
+    </script>
+</body>
+</html>

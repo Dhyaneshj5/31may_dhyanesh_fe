@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Find the length of a string without using libraryFunction?</h1>
+    <script>
+        function findStringLength(str) {
+    let length = 0;
+    while (str[length] !== undefined) {
+        length++;
+    }
+    return length;
+}
+
+let str = "What are all the looping structures in JavaScript?";
+let length = findStringLength(str);
+console.log("Length of the string:", length); // Output: 13
+
+    </script>
+</body>
+</html>

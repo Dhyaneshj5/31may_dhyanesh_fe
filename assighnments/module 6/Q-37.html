@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-37</title>
+</head>
+<body>
+    <h1>
+        Use console.log() and escape characters to print the following pattern in JS?
+    </h1>
+    <h2> find answer in script and consol</h2>
+    <script>
+        str = "";
+  
+        for (let i = 1; i <= 5; i++) {
+          for (let j = 1; j <= 5; j++) {
+            if (j == 1) {
+              str = str + i + " ";
+            }
+            if (j == 2) {
+              str = str + 1 + " ";
+            }
+            if (j == 3) {
+              str = str + i + " ";
+            }
+            if (j == 4) {
+              str = str + i * i + " ";
+            }
+            if (j == 5) {
+              str = str + i * i * i + " ";
+            }
+          }
+          str = str + "\n";
+        }
+        console.log(str);
+      </script>
+</body>
+</html>

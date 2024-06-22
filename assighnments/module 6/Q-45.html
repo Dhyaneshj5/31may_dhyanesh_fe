@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Write a JavaScript program to determine if a variable is array?</h1>
+    <h2> find answer in script and consol</h2>
+
+    <script>
+        function isArray(variable) {
+    return Array.isArray(variable);
+}
+
+// Examples:
+console.log(isArray([])); // true
+console.log(isArray([1, 2, 3])); // true
+console.log(isArray({})); // false
+console.log(isArray("Hello")); // false
+console.log(isArray(123)); // false
+
+    </script>
+</body>
+</html>

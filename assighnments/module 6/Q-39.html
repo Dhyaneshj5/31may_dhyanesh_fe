@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b>Qus:</b> Accept 3 numbers from user using while loop and check each
+    numbers palindrome?
+
+    <br />
+
+    <h2> find answer in script and consol</h2>
+
+
+    <script>
+      function palindromeCheck(num) {
+        let numStr = num.toString();
+        let result = numStr.split("").reverse().join("");
+        return numStr === result;
+      }
+
+      console.log(palindromeCheck(12321));
+      console.log(palindromeCheck(1234321));
+    </script>
+</body>
+</html>
